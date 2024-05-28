@@ -1,0 +1,74 @@
+:root {
+  --page-background: linear-gradient(135deg, #c2e9fb 0%, #a1c4fd 100%);
+  --code-background: #2d2d2d;
+  --window-controls-red: #ff5f56;
+  --window-controls-green: #27c93f;
+  --window-controls-yellow: #ffbd2e;
+  --keyword: #ff79c6;
+  --variable: #8be9fd;
+  --string: #f1fa8c;
+  --number: #bd93f9;
+  --console: #50fa7b;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--page-background);
+  margin: 0;
+  font-family: 'Fira Code', monospace;
+}
+.code-container {
+  background: var(--code-background);
+  border-radius: 10px;
+  padding: 40px 25px 25px;
+  color: #fff;
+  font-size: 1.2rem;
+  position: relative;
+}
+.code-container::before {
+  content: 'script.js';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+.window-controls {
+  display: flex;
+  gap: 5px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.window-controls div {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.window-controls .red {
+  background: var(--window-controls-red);
+}
+.window-controls .yellow {
+  background: var(--window-controls-yellow);
+}
+.window-controls .green {
+  background: var(--window-controls-green);
+}
+.keyword {
+  color: var(--keyword);
+}
+.variable {
+  color: var(--variable);
+}
+.string {
+  color: var(--string);
+}
+.number {
+  color: var(--number);
+}
+.console {
+  color: var(--console);
+}
